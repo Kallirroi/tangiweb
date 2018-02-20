@@ -19,7 +19,7 @@ for fileName in expression:
 	imageName = os.path.splitext(fileName)[0]
 	print('RAG running on %s' % imageName)
 	img = io.imread(path+fileName)
-	labels = segmentation.slic(img, compactness=10, n_segments=24 * 16)
+	labels = segmentation.slic(img, compactness=10, n_segments=24 * 12)
 	out = color.label2rgb(labels, img, kind='avg')
-	plt.imsave('out/'+imageName+'.png', out)
+	plt.imsave('out/'+imageName+'.png', out, cmap='gray')
 	print('RAG finished on %s' % imageName)
