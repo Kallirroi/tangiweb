@@ -12,6 +12,7 @@ from skimage import data, io, segmentation, color
 from skimage.future import graph
 from matplotlib import pyplot as plt
 import os
+from PIL import Image
 
 path = 'in/'
 expression = [fileName for fileName in os.listdir(path) if fileName[-4:] in [".png",".PNG", ".jpg", ".JPG"]]
@@ -21,5 +22,9 @@ for fileName in expression:
 	img = io.imread(path+fileName)
 	labels = segmentation.slic(img, compactness=10, n_segments=24 * 12)
 	out = color.label2rgb(labels, img, kind='avg')
-	plt.imsave('out/'+imageName+'.png', out, cmap='gray')
+
+	plt.imsave('out/'+imageName+'.png', out)
 	print('RAG finished on %s' % imageName)
+	img = Image.open('out/'+imageName+'.png').convert('LA')
+	print('converting %s to grayscale ' % imageName)
+	img.save('out/'+imageName+'.png')
