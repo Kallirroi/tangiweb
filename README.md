@@ -10,7 +10,7 @@ The scripts do the following
 
 
 Useful links
-[https://hexdocs.pm/phoenix/overview.html](https://hexdocs.pm/phoenix/overview.html)
-[https://stackoverflow.com/questions/8255929/running-selenium-webdriver-python-bindings-in-chrome](https://stackoverflow.com/questions/8255929/running-selenium-webdriver-python-bindings-in-chrome)
-[https://stackoverflow.com/questions/30141847/how-to-select-chrome-extensions-to-enable-when-using-selenium](https://stackoverflow.com/questions/30141847/how-to-select-chrome-extensions-to-enable-when-using-selenium)
-[https://seleniumwithjavapython.wordpress.com/selenium-with-python/basics-of-webdriver/taking-screenshot-of-a-page/](https://seleniumwithjavapython.wordpress.com/selenium-with-python/basics-of-webdriver/taking-screenshot-of-a-page/)
+- [https://hexdocs.pm/phoenix/overview.html](https://hexdocs.pm/phoenix/overview.html)
+- [https://stackoverflow.com/questions/8255929/running-selenium-webdriver-python-bindings-in-chrome](https://stackoverflow.com/questions/8255929/running-selenium-webdriver-python-bindings-in-chrome)
+- [https://stackoverflow.com/questions/30141847/how-to-select-chrome-extensions-to-enable-when-using-selenium](https://stackoverflow.com/questions/30141847/how-to-select-chrome-extensions-to-enable-when-using-selenium)
+- [https://seleniumwithjavapython.wordpress.com/selenium-with-python/basics-of-webdriver/taking-screenshot-of-a-page/](https://seleniumwithjavapython.wordpress.com/selenium-with-python/basics-of-webdriver/taking-screenshot-of-a-page/)
