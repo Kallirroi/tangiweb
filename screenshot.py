@@ -1,0 +1,43 @@
+# import unittest
+# from selenium import webdriver
+# from selenium.webdriver.chrome.options import Options
+ 
+ 
+ 
+# class MyScreenshot(unittest.TestCase):
+ 
+#     def setUp(self):
+#         self.driver = webdriver.Chrome()
+#     def test_takescreenshot(self):
+#         driver = self.driver
+#         driver.maximize_window()
+#         chrome_options = Options()
+#         chrome_options.add_extension('/Users/Kallirroi/Desktop/tangiWEB')
+#         driver = webdriver.Chrome(chrome_options=chrome_options)
+#         driver.get('http://www.nytimes.com/')
+ 
+#         # driver.save_screenshot('/in/')
+ 
+ 
+#     def tearDown(self):
+#         self.driver.quit()
+ 
+
+# if __name__ == '__main__':
+#     unittest.main()
+
+
+import os
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
+
+executable_path = "/opt/local/var/macports/sources/rsync.macports.org/release/tarballs/ports/www/chromedriver"
+os.environ["webdriver.chrome.driver"] = executable_path
+
+chrome_options = Options()
+chrome_options.add_extension('/Users/Kallirroi/Desktop/tangiweb.crx')
+
+driver = webdriver.Chrome(executable_path=executable_path, chrome_options=chrome_options)
+driver.get("http://nytimes.com")
+driver.quit()
