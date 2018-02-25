@@ -1,3 +1,5 @@
+# echo "cleaning up temp folder"
+# rm temp/*
 echo "preparing to take screeshot"
 python screenshot.py
 echo "preparing to pixelate"
