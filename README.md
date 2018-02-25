@@ -1,7 +1,7 @@
 ### tangiWEB
 
 
-![process][process.gif]
+![process][https://github.com/Kallirroi/tangiweb/blob/master/process.gif]
 
 `run.sh` does the following:
 
