@@ -1,5 +1,8 @@
 ### tangiWEB
 
+
+![process][process.gif]
+
 `run.sh` does the following:
 
 
@@ -15,3 +18,5 @@ Useful links
 - [https://stackoverflow.com/questions/8255929/running-selenium-webdriver-python-bindings-in-chrome](https://stackoverflow.com/questions/8255929/running-selenium-webdriver-python-bindings-in-chrome)
 - [https://stackoverflow.com/questions/30141847/how-to-select-chrome-extensions-to-enable-when-using-selenium](https://stackoverflow.com/questions/30141847/how-to-select-chrome-extensions-to-enable-when-using-selenium)
 - [https://seleniumwithjavapython.wordpress.com/selenium-with-python/basics-of-webdriver/taking-screenshot-of-a-page/](https://seleniumwithjavapython.wordpress.com/selenium-with-python/basics-of-webdriver/taking-screenshot-of-a-page/)
+- [https://www.learnopencv.com/filling-holes-in-an-image-using-opencv-python-c/](https://www.learnopencv.com/filling-holes-in-an-image-using-opencv-python-c/)
+- [https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html)
