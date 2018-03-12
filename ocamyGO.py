@@ -73,6 +73,6 @@ f.close()
 f = open('tests/'+name+'/out.txt', 'r')
 strobo = f.read();
 f.close()
-print(strobo)
+# print(strobo)
 
 # channel.push("input",{"body": strobo})
