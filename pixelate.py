@@ -45,7 +45,8 @@ def make_one_square(img, row, col, square_h, square_w):
         img[y][x] = (av_r, av_g, av_b)
 
 if __name__ == "__main__":
-    filename = "in/screenshot.png"
+    # filename = "in/screenshot.png"
+    filename = "test1/test.png"
     img = load_img(filename)
 
     # Figure out the dimensions of each square
@@ -54,9 +55,9 @@ if __name__ == "__main__":
     # 2. No leftover pixels at the edges
     # This means that some squares might have one more or one less pixel
     # depending on rounding
-    num_cols = int(16)
+    num_cols = int(48)
     square_w = float(img.shape[1]) / num_cols
-    num_rows = int(round(img.shape[0] / square_w))
+    num_rows = int(24)
     square_h = float(img.shape[0]) / num_rows
 
     # overwrite each square with the average color, one by one

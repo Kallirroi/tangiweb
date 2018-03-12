@@ -30,7 +30,7 @@ while offset < scrollheight:
     offset += img.size[1]
     slices.append(img)
     counter += 1
-    driver.get_screenshot_as_file('%s/screen_%s.png' % ('temp/', counter))
+    driver.get_screenshot_as_file('%s/screen_%s.png' % ('/Users/Kallirroi/Desktop/temp/tangiWEB/', counter))
 
 screenshot = Image.new('RGB', (slices[0].size[0], scrollheight))
 offset = 0
