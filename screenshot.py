@@ -1,4 +1,5 @@
 import os
+import sys
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from PIL import Image
@@ -11,7 +12,9 @@ chrome_options = Options()
 chrome_options.add_extension('/Users/Kallirroi/Desktop/tangiweb.crx')
 driver = webdriver.Chrome(executable_path=executable_path, chrome_options=chrome_options)
 
-url="http://www.bbc.com/"
+name = sys.argv[1]
+url='http://www.'+str(name)+'.com/'
+print(url)
 driver.get(url)
 print('getting driver')
 driver.maximize_window()
@@ -38,6 +41,6 @@ for img in slices:
     screenshot.paste(img, (0, offset))
     offset += img.size[1]
 
-screenshot.save('/Users/Kallirroi/Desktop/tangiWEB/in/screenshot.png')
+screenshot.save('tests/'+name+'/screenshot.png')
 print('saving screenshot')
 driver.quit()

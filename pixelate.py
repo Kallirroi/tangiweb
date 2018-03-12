@@ -46,7 +46,8 @@ def make_one_square(img, row, col, square_h, square_w):
 
 if __name__ == "__main__":
     # filename = "in/screenshot.png"
-    filename = "test1/test.png"
+    name = sys.argv[1]
+    filename = "tests/"+name+"/screenshot.png"
     img = load_img(filename)
 
     # Figure out the dimensions of each square

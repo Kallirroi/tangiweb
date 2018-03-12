@@ -1,11 +1,15 @@
+import sys
+
 import cv2
 import numpy as np
- 
+
 # Read image
 # im_in = cv2.imread("out/screenshot_pixelated.png", cv2.IMREAD_GRAYSCALE);
-im_in = cv2.imread("test1/test_pixelated.png", cv2.IMREAD_GRAYSCALE);
+name = sys.argv[1]
+
+im_in = cv2.imread('tests/'+name+'/screenshot_pixelated.png', cv2.IMREAD_GRAYSCALE);
 # cv2.imwrite('out/screenshot_pixelated_gray.png', im_in)
-cv2.imwrite('test1/test_pixelated_gray.png', im_in)
+cv2.imwrite('tests/'+name+'/screenshot_pixelated_gray.png', im_in)
 
 
 th, im_th = cv2.threshold(im_in, 255, 255, cv2.THRESH_TOZERO_INV);
@@ -25,4 +29,4 @@ im_floodfill_inv = cv2.bitwise_not(im_floodfill)
 
 # Save
 # cv2.imwrite('out/screenshot_pixelated_gray_inverted.png', im_floodfill_inv)
-cv2.imwrite('test1/test_pixelated_gray_inverted.png', im_floodfill_inv)
+cv2.imwrite('tests/'+name+'/screenshot_pixelated_gray_inverted.png', im_floodfill_inv)

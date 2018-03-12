@@ -11,6 +11,13 @@
 
 All of the above can be used independently to test the system.
 
+
+#### todos
+
+- [ ] cleanup
+- [x] pass name of folder as argument across files
+- [ ] orientation / division of image across three grids
+
 Useful links
 - [https://hexdocs.pm/phoenix/overview.html](https://hexdocs.pm/phoenix/overview.html)
 - [https://stackoverflow.com/questions/8255929/running-selenium-webdriver-python-bindings-in-chrome](https://stackoverflow.com/questions/8255929/running-selenium-webdriver-python-bindings-in-chrome)

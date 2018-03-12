@@ -18,37 +18,19 @@ except:  # py3
 from occamy import Socket
 
 
-socket = Socket("ws://dlevs.me:4000/socket")
-socket.connect()
-
-channel = socket.channel("room:lobby", {})
-channel.on("new_msg", lambda msg, x: print("> {}".format(msg["body"])))
-
-channel.join()
-
+# socket = Socket("ws://dlevs.me:4000/socket")
+# socket.connect()
+# channel = socket.channel("room:lobby", {})
+# channel.on("new_msg", lambda msg, x: print("> {}".format(msg["body"])))
+# channel.join()
 #print("Enter your message and press return to send the message.")
 #print()
 
-# order is 48 rows, 24 columns
-
-# indexed from 0
-# valuesArray has the values you want to input for the row
-def modifyRow(inputArray, rowNum, colValuesArray):
-    indexMin = rowNum*24
-    indexMax = indexMin+23
-    counter = 0;
-    
-    for i in range(indexMin, indexMax):
-        inputArray[i] = colValuesArray[counter]
-        counter+=1
-
-    return inputArray
 
 def load_img(filename):
     img = Image.open(filename)
     data = np.array(img)
     return data
-
 
 def all_square_pixels(row, col, square_h, square_w):
     for y in xrange(int(round(row*square_h)), int(round((row+1)*square_h))):
@@ -67,17 +49,18 @@ def make_one_square(img, row, col, square_h, square_w):
 
 
 # geebs = np.zeros(1152);
-strobo = "";
-filename = "test1/test_pixelated_gray_inverted.png"
+strobo = ''
+name = sys.argv[1]
+filename = 'tests/'+name+'/screenshot_pixelated_gray_inverted.png'
 img = load_img(filename)
 num_cols = int(48)
 square_w = float(img.shape[1]) / num_cols
 num_rows = int(24)
 square_h = float(img.shape[0]) / num_rows
 
-f = open('test1/out.txt', 'w')
+f = open('tests/'+name+'/out.txt', 'w')
 
-while True: 
+# while True: 
 for row in range(num_rows):
     for col in range(num_cols):
         ele = make_one_square(img, row, col, square_h, square_w)
@@ -87,7 +70,7 @@ for row in range(num_rows):
 f.close()
 
 
-f = open('test1/out.txt', 'r')
+f = open('tests/'+name+'/out.txt', 'r')
 strobo = f.read();
 f.close()
 print(strobo)
