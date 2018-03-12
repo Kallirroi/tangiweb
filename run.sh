@@ -1,3 +1,5 @@
+echo "creating directory for $1"
+mkdir tests/$1
 echo "preparing to take screeshot of $1" 
 python screenshot.py $1
 echo "preparing to pixelate $1"
