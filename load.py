@@ -43,7 +43,7 @@ def showIndex(index):
     currentServerDictElement = dictlist[2].values()[index]
     if connected:
     	print(currentServerDictElement)
-        # channel.push("input",{"body": currentServerDictElement})
+        channel.push("input",{"body": currentServerDictElement})
 
 # ----------------------------------------  handle key presses
 

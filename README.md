@@ -6,17 +6,10 @@
 - It scrolls along the full length of the page and saves the interim screenshots in `temp/` folder.
 - `pixelate.py` pixelizes the long screenshot in 16 left-to-right squares, and saves it.
 - `invert.py` grays and saves the final output.
-- `ocamyGO.py` loads the final output from above (which by now is pixelated, in grayscale and inverted), and creates a 16 * 24 matrix out of it. Since the image is gray, all the rgb values are equal, and we don't need to average them separately.
-- it saves the matrix into a file `output.txt` which then gets sent to the `room:lobby` channel using the `ws://dlevs.me:4000/socket` socket.
+- `translate.py` loads the final output from above (which by now is pixelated, in grayscale and inverted), and creates a 16 * 24 matrix out of it. Since the image is gray, all the rgb values are equal, and we don't need to average them separately.
+- it saves the matrix into a file `output.txt` 
+- `load.py` creates an image viewer where we can scroll between screenshots and send the `.txt` file to the server via a socket.
 
-All of the above can be used independently to test the system.
-
-
-#### todos
-
-- [ ] cleanup
-- [x] pass name of folder as argument across files
-- [ ] orientation / division of image across three grids
 
 Useful links
 - [https://hexdocs.pm/phoenix/overview.html](https://hexdocs.pm/phoenix/overview.html)
@@ -26,4 +19,3 @@ Useful links
 - [https://www.learnopencv.com/filling-holes-in-an-image-using-opencv-python-c/](https://www.learnopencv.com/filling-holes-in-an-image-using-opencv-python-c/)
 - [https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html)
 
-![process](https://github.com/Kallirroi/tangiweb/blob/master/process.gif)
