@@ -24,7 +24,7 @@ dictlist.append(finals)
 
 forServer = {}
 for x in xrange(1,37):
-    with open('tests/semantic/everything/CNNshort16x24/finalServerCropped/out'+str(x)+'.txt', 'rb') as f:
+    with open('tests/semantic/everything/CNNshort16x24/finalServer/out'+str(x)+'.txt', 'rb') as f:
         finalText = f.read()
     forServer[x] = finalText
 dictlist.append(forServer)
@@ -43,7 +43,7 @@ def showIndex(index):
     currentServerDictElement = dictlist[2].values()[index]
     if connected:
     	print(currentServerDictElement)
-        channel.push("input",{"body": currentServerDictElement})
+        # channel.push("input",{"body": currentServerDictElement})
 
 # ----------------------------------------  handle key presses
 
