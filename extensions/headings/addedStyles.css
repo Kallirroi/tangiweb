@@ -1,0 +1,90 @@
+body {
+	background-color: #fff !important;
+}
+
+img, * > img, img > *, * > img > * {
+	opacity: 0 !important;
+}
+
+div, p, h1, h2, h3, h4, h5, span, ul, li, section, p, aside, table, video, nav, ol {
+	background-image: none !important;
+}
+
+div > * > a , div > a > * , div > * > a > *, * > a, * > a > * {	
+	/*font-size: 200px !important;*/
+	/*background-image: url('icon.png') center no-repeat !important;*/
+	background-color: black !important;
+	color: black !important;
+	border: 1px solid black;
+	opacity: 0 !important;
+}
+
+
+div::after {
+	background-image: none !important;
+	background-color: #fff !important;
+}
+
+button > * , *  > button , * > button > * {	
+	/*font-size: 200px !important;*/
+	background: black !important;
+	color: black !important;
+	opacity: 0 !important;
+}
+
+
+p > * , *  > p , * > p >  * {	
+	/*font-size: 200px !important;*/
+	background: black !important;
+	color: black !important;
+	opacity: 0 !important;
+}
+
+* > input , input > * , * > input > * {	
+	/*font-size: 200px !important;*/
+	background: black !important;
+	color: black  !important;
+	opacity: 0 !important;
+}
+
+
+h1 > *, * > h1,  * > h1 > * {	
+	/*font-size: 200px !important;*/
+	/*background-image: url('icon.png') center no-repeat !important;*/
+	background-color: black !important;
+	color: black !important;
+	border: 1px solid black;
+	opacity: 1 !important;
+}
+h2 > *, * > h2,  * > h2 > * {	
+	/*font-size: 200px !important;*/
+	/*background-image: url('icon.png') center no-repeat !important;*/
+	background-color: black !important;
+	color: black !important;
+	border: 1px solid black;
+	opacity: 1 !important;
+}
+h2 > *, * > h2,  * > h2 > * {	
+	/*font-size: 200px !important;*/
+	/*background-image: url('icon.png') center no-repeat !important;*/
+	background-color: black !important;
+	color: black !important;
+	border: 1px solid black;
+	opacity: 1 !important;
+}
+h3 > *, * > h3,  * > h3 > * {	
+	/*font-size: 200px !important;*/
+	/*background-image: url('icon.png') center no-repeat !important;*/
+	background-color: black !important;
+	color: black !important;
+	border: 1px solid black;
+	opacity: 1 !important;
+}
+h4 > *, * > h4,  * > h4 > * {	
+	/*font-size: 200px !important;*/
+	/*background-image: url('icon.png') center no-repeat !important;*/
+	background-color: black !important;
+	color: black !important;
+	border: 1px solid black;
+	opacity: 1 !important;
+}

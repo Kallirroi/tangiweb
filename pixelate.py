@@ -46,8 +46,9 @@ def make_one_square(img, row, col, square_h, square_w):
 
 if __name__ == "__main__":
     # filename = "in/screenshot.png"
-    name = sys.argv[1]
-    filename = "tests/"+name+"/screenshot.png"
+    # name = sys.argv[1]
+    # filename = name+"/screenshot.png"
+    filename = sys.argv[1]
     img = load_img(filename)
 
     # Figure out the dimensions of each square
@@ -56,7 +57,7 @@ if __name__ == "__main__":
     # 2. No leftover pixels at the edges
     # This means that some squares might have one more or one less pixel
     # depending on rounding
-    num_cols = int(48)
+    num_cols = int(16)
     square_w = float(img.shape[1]) / num_cols
     num_rows = int(24)
     square_h = float(img.shape[0]) / num_rows
